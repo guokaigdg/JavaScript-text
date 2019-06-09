@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>guokai</title> 
+</head>
+<body>
+<!-- <h1>我的第一个 JavaScript</h1> -->
+<p id="pdd"></p>
+<input id="name" type="text" >
+<br>
+<input id="password" type="text" >
+</br>
+<input id="btn" type="button" onclick="Demo2()" value="按钮">
+    <script>
+        function Demo2(){
+            try{
+                var name = document.getElementById("name").value;
+                var password = document.getElementById("password").value;
+                if(name == ""&&password == ""){
+                    throw"请输入名字和密码";
+                }
+                else if(name == ""&&password !== ""){
+                    throw "请输入名字";
+                }
+                else if(name !== ""&&password == ""){
+                    throw "请输入密码";
+                }
+            }
+            catch(err){
+                alert(err);
+            }
+        }
+        
+        // document.getElementById("pid").innerHTML="哈哈哈哈";
+        // var test2 = "adb333\0156\b测是";
+        // var ceshi = 123e7;
+        // var iNUM = 10;
+        // // document.write(iNUM.toString(),"   ");
+        // var aaa = parseInt("eeed")
+        // var num = parseInt("010",2);
+        // var num2 = parseInt("10",8);
+        // var num3 = parseInt("10",10);
+        // document.write(num," ");
+        // document.write(num2," ");
+        // document.write(num3 + "<br>");
+        // // document.write(aaa);
+        // var numObject = new Number(66.456);
+        // document.write (numObject.toFixed(20),"<br>");
+        // var a = new String("hello ");
+        // var b = a.concat("world");
+        // var c = a + "world";
+        // var gk= "guokaigdg";
+        // document.write(a, "<br>");
+        // document.write(b, "<br>");
+        // document.write(c, "<br>");
+        // document.write(c.indexOf("o"),"<br>");
+        // document.write(gk.lastIndexOf("g") + "<br>");
+        for(var i = 0; i<=10; i++){
+            if(i==5){
+                continue;
+                document.write("i = "+"<br>");
+            }
+            //document.write("i = "+ i +"<br>");
+        }
+        // function Demo(a,b){
+        //     try{ 
+        //         return  (a+b);
+        //     }
+        //     catch(err){
+        //         document.write(err);
+        //     }
+        // }
+        //document.write("a + b = "+;
+       document.getElementById("pdd").innerHTML =  Demo(4,11);
+    </script>
+    <!-- <form>
+        <input type="button" value="按钮" onclick="Demo(4,6)"></input>
+    </form> -->
+<div>
+    <!-- <h2>123</h2> --> 
+    <Button >login</Button>
+</div>
+
+</body>
+</html>
