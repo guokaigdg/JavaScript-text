@@ -1,2 +1,6 @@
 # JavaScript-text
-JavaScript笔记
+JavaScript
+```
+try(){}
+catch{}
+```
